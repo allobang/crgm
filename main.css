@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #03ac13;
+  border-color: #e7e7e7;
+  color: black;
+  /* padding: 3px; */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+h3 {
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header a, a:visited, a:link, a:active, a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 3px 0;
+  margin-left: 15px;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #03ac13;
+  width: 260px;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu li {
+  padding: 10px;
+  position: relative;
+}
+
+
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#indvlmenu{
+  border: 1px solid;
+  border-color: #e7e7e7;
+}
+
+
+.has-submenu > a::after {
+  content: "\e114"; /* Unicode for glyphicon-chevron-down */
+  font-family: 'Glyphicons Halflings';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  float: right;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+   /* Custom CSS for the submenu icon */
+   .has-has-submenu > a::before {
+    content: "\e114"; /* Unicode for glyphicon-chevron-down */
+    font-family: 'Glyphicons Halflings';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 5px; /* Add space between icon and text */
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+
+  .submenu {
+  display: none;
+}
+
+
+.last-submenu {
+  margin-left: 5px;
+}
+
+#myNavbar {
+  margin-left: auto;
+}
+
+#myNavbar a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  background-color: #03ac13;
+}
+
+

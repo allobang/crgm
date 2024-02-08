@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar{
+    position: relative;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #c5d5ba;
+    transition: all .5s ease;
+  }
+
+  .sidebar header{
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #046113;
+    user-select: none;
+    /* font-family: 'Montserrat', sans-serif; */
+  }
+
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    line-height: 65px;
+    font-size: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    /* border-left: 5px solid transparent; */
+    /* font-family: 'Open Sans', sans-serif; */
+    transition: all .5s ease;
+  }
+
+  ul li:hover a{
+    padding-left: 50px;
+  }
+
+  .sidebar ul a i{
+    margin-right: 16px;
+  }
+
+  #check{
+    display: none;
+  }
+
+  label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #0c0c0c;
+    border-radius: 5px;
+    /* color: white;
+    border: 1px solid #262626;
+    margin: 15px 30px;
+    font-size: 29px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease; */
+  }
+
+  label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: rgb(249, 241, 241);
+    padding: 6px 12px;
+    transition: all .5s;
+  }
+
+  label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: rgb(255, 254, 254);
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+
+  #check:checked ~ label #btn{
+    left: 250px;
+    /* margin-left: 245px; */
+    opacity: 0;
+    /* visibility: hidden; */
+    pointer-events: none;
+  }
+
+  #check:checked ~ label #cancel{
+    left: 195px;
+  }
+
+  /* #check:checked ~ label #section{
+    margin-left: 250px;
+  }
+
+  section{
+    background: url(logo.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+  } */
+
+
+
+
+
+  /*         <header class="rounded">
+
+            <!-- <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu">
+            <ul class="main-menu">
+                <li id="indvlmenu"><a href="main.php">Home</a></li>
+                <li class="has-submenu" id="indvlmenu"><a href="#">Income Generating Enterprise</a>
+                    <ul class="submenu">
+                        <li id="indvlmenu2"><a href="crgm_agri_based_enterprise.php">Agri-Based Enterprise</a>
+                        </li>
+                        <li id="indvlmenu2"><a href="#">Non Agri-Based Enterprise</a>
+                            <ul class="submenu">
+                                <li><a href="#">Rentals</a></li>
+                                <li class="last-submenu"><a href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu" id="indvlmenu"><a href="#">Reports</a>
+                    <ul class="submenu" id="indvlmenu2">
+                        <li><a href="reports/crgm_monthly.php">Monthly</a></li>
+                        <li><a href="#">Quarterly</a></li>
+                        <li><a href="#">Annually</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu" id="indvlmenu"><a href="#">Account Receivables</a>
+                    <ul class="submenu" id="indvlmenu2">
+                        <li><a href="crgm_account_receivable/january_account_receivable.php">January</a></li>
+                        <li><a href="crgm_account_receivable/february_account_receivable.php">February</a></li>
+                        <li><a href="crgm_account_receivable/march_account_receivable.php">March</a></li>
+                        <li><a href="crgm_account_receivable/april_account_receivable.php">April</a></li>
+                        <li><a href="crgm_account_receivable/may_account_receivable.php">May</a></li>
+                        <li><a href="crgm_account_receivable/june_account_receivable.php">June</a></li>
+                        <li><a href="crgm_account_receivable/july_account_receivable.php">July</a></li>
+                        <li><a href="crgm_account_receivable/august_account_receivable.php">August</a></li>
+                        <li><a href="crgm_account_receivable/september_account_receivable.php">September</a></li>
+                        <li><a href="crgm_account_receivable/october_account_receivable.php">October</a></li>
+                        <li><a href="crgm_account_receivable/november_account_receivable.php">November</a></li>
+                        <li><a href="crgm_account_receivable/december_account_receivable.php">December</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav> -->
+
+
+            <a href="crgmmain.php"><img src="images/logo.png" alt="ISU Logo"></a>
+            <h3><a href="crgmmain.php">CRGM Project-Based Monitoring and Management System</a></h3>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- Add Sign In and Sign Out options -->
+                    <li>
+                        <a href="logout.php">
+                            <span class="glyphicon glyphicon-user"></span> Sign Out
+                        </a>
+                    </li>
+                    <!-- Add Sign Out option -->
+                </ul>
+            </div>
+        </header> */
+
+
+
+
+        /*  <div class="wrapper">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="crgmmain.php"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="main.php"><i class="fa fa-user"></i>cashier</a></li>
+                <li><a href="#"><i class="fa fa-address-card"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-mars-stroke-v"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-meetup"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-map-pin"></i>Home</a></li>
+            </ul>
+
+            <div class="social_media">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+            </div>
+
+        </div>
+        <div class="main_content">
+            <div class="header">Welcome! Have a nice day.</div>
+            <div class="header">
+            <header class="rounded">
+                <a href="crgmmain.php"><img src="images/logo.png" alt="ISU Logo"></a>
+                <h3><a href="crgmmain.php">CRGM Project-Based Monitoring and Management System</a></h3>
+                <div >
+                    <ul>
+                        <!-- Add Sign In and Sign Out options -->
+                        <li>
+                            <a href="logout.php">
+                                <span class="glyphicon glyphicon-user"></span> Sign Out
+                            </a>
+                        </li>
+                        <!-- Add Sign Out option -->
+                    </ul>
+                </div>
+            </header>
+        </div>
+            <div class="info">
+                <div>Lorem, ipsum dolor sit amet!</div>
+            </div>
+        </div>
+
+        
+    </div> */
